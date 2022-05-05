@@ -19,26 +19,27 @@ const UserForm = () => {
         <form onSubmit={ createUser }>
             <div>
                 <label>First Name: </label> 
-                <input  name='firstName'onChange={ (e) => setFirstname(e.target.value) } />
+                <input  value={firstName} onChange={ (e) => setFirstname(e.target.value) } />
             </div>
   <div>
                 <label>Last Name: </label> 
-                <input  name='lastName'onChange={ (e) => setLastname(e.target.value) } />
+                <input  value={lastName} onChange={ (e) => setLastname(e.target.value) } />
             </div>
             <div>
                 <label>Email Address: </label> 
-                <input name='email' onChange={ (e) => setEmail(e.target.value) } />
+                <input value={email} onChange={ (e) => setEmail(e.target.value) } />
             </div>
             <div>
                 <label>Password: </label>
-                <input name='password' onChange={ (e) => setPassword(e.target.value) } />
+                <input value={password} onChange={ (e) => setPassword(e.target.value) } />
             </div>
 
              <div>
                 <label>Confirm Password: </label>
-                <input name='confirmPassword' onChange={ (e) => setConfirmPassword(e.target.value) } />
+                <input value={confirmPassword} onChange={ (e) => setConfirmPassword(e.target.value) } />
+               
             </div>
-
+            <input type="submit" value="Create User" />
         </form>
         <div>
             <h1>Your Form data</h1>
